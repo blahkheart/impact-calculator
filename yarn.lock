@@ -1944,6 +1944,7 @@ __metadata:
     "@types/node": ^17.0.35
     "@types/nprogress": ^0
     "@types/react": ^18.0.9
+    "@types/react-autosuggest": ^10
     "@types/react-copy-to-clipboard": ^5.0.4
     "@typescript-eslint/eslint-plugin": ^5.39.0
     "@uniswap/sdk-core": ^4.0.1
@@ -1969,6 +1970,7 @@ __metadata:
     prettier: ^2.8.4
     qrcode.react: ^3.1.0
     react: ^18.2.0
+    react-autosuggest: ^10.1.0
     react-copy-to-clipboard: ^5.1.0
     react-dom: ^18.2.0
     react-hot-toast: ^2.4.0
@@ -2825,6 +2827,15 @@ __metadata:
   version: 6.9.8
   resolution: "@types/qs@npm:6.9.8"
   checksum: c28e07d00d07970e5134c6eed184a0189b8a4649e28fdf36d9117fe671c067a44820890de6bdecef18217647a95e9c6aebdaaae69f5fe4b0bec9345db885f77e
+  languageName: node
+  linkType: hard
+
+"@types/react-autosuggest@npm:^10":
+  version: 10.1.11
+  resolution: "@types/react-autosuggest@npm:10.1.11"
+  dependencies:
+    "@types/react": "*"
+  checksum: 2556dfc2409b510020aa4179258827c64d22d81234259cc7ce9e46bae9a64811dce0b29450121be1ccee1b2cb3a35e5950df540452c9c610cf878d7a4d6f82bc
   languageName: node
   linkType: hard
 
@@ -7128,7 +7139,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es6-promise@npm:^4.0.3":
+"es6-promise@npm:^4.0.3, es6-promise@npm:^4.2.8":
   version: 4.2.8
   resolution: "es6-promise@npm:4.2.8"
   checksum: 95614a88873611cb9165a85d36afa7268af5c03a378b35ca7bda9508e1d4f1f6f19a788d4bc755b3fd37c8ebba40782018e02034564ff24c9d6fa37e959ad57d
@@ -12918,6 +12929,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"object-assign@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "object-assign@npm:3.0.0"
+  checksum: 56c66a77318aea95b11bd16a65c313e98786cea1db673a7fdd3bc92aced671b35f62a9819ad9cf7846921c773818329636cda5cd1b7c4fa0ce9908440e091dac
+  languageName: node
+  linkType: hard
+
 "object-assign@npm:^4.0.1, object-assign@npm:^4.1.0, object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
@@ -13876,7 +13894,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -14145,6 +14163,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-autosuggest@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "react-autosuggest@npm:10.1.0"
+  dependencies:
+    es6-promise: ^4.2.8
+    prop-types: ^15.7.2
+    react-themeable: ^1.1.0
+    section-iterator: ^2.0.0
+    shallow-equal: ^1.2.1
+  peerDependencies:
+    react: ">=16.3.0"
+  checksum: 3526b02bb1938374c2a0d108a03666eae24cddd8bef7686e7f6271bb4c25ad34f8b09e84d1cc2e9206aff577a742c1f8481964e75442a9e080326676ad71f8ae
+  languageName: node
+  linkType: hard
+
 "react-copy-to-clipboard@npm:^5.1.0":
   version: 5.1.0
   resolution: "react-copy-to-clipboard@npm:5.1.0"
@@ -14260,6 +14293,15 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 7ee8ef3aab74c7ae1d70ff34a27643d11ba1a8d62d072c767827d9ff9a520905223e567002e0bf6c772929d8ea1c781a3ba0cc4a563e92b1e3dc2eaa817ecbe8
+  languageName: node
+  linkType: hard
+
+"react-themeable@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "react-themeable@npm:1.1.0"
+  dependencies:
+    object-assign: ^3.0.0
+  checksum: 80d8fa67d15f3136ae8054bfbecc2f1a396b7cda4f10380e13e8f344b07543a55adfb5aca0cf741071e406d8115ff3ea8e361476a086ba5ad55a1feb9cb9ae7a
   languageName: node
   linkType: hard
 
@@ -15123,6 +15165,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"section-iterator@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "section-iterator@npm:2.0.0"
+  checksum: d11ae54205baf1ccea5f847b3b5cd9394128ac1051b4ac236d145c9b386e5dd274371a63991e575e20373bacd1c287bfe6159ddf366cb21f30b123e185e6bc7d
+  languageName: node
+  linkType: hard
+
 "semver-diff@npm:^2.0.0":
   version: 2.1.0
   resolution: "semver-diff@npm:2.1.0"
@@ -15279,6 +15328,13 @@ __metadata:
     graceful-fs: ^4.1.2
     readable-stream: ^2.0.2
   checksum: 5096ab13283eaece10c17142158a1311120e5b2606f49a9cbb70b8d6a9f4b2cdac2179fa1e77c9f1f2b719920c1ecc4465fcf66be7e855914104bc4ecf0415a3
+  languageName: node
+  linkType: hard
+
+"shallow-equal@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "shallow-equal@npm:1.2.1"
+  checksum: 4f1645cc516e7754c4438db687e1da439a5f29a7dba2ba90c5f88e5708aeb17bc4355ba45cad805b0e95dc898e37d8bf6d77d854919c7512f89939986cff8cd1
   languageName: node
   linkType: hard
 
